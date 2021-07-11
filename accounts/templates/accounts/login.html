@@ -1,0 +1,36 @@
+{% extends 'accounts/base.html' %} 
+{% block loginform %}
+<div class="container">
+  <h1 class="display-4">Login into your Account</h1>
+  <form class="mt-5" method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        name="username"
+        placeholder="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        placeholder="Password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-4">Login</button>
+  </form>
+</div>
+<div class="message">
+  {% for message in messages %}
+  <small>*{{message}}</small>
+  {% endfor %}
+</div>
+
+{% endblock%}

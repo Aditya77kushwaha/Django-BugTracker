@@ -1,0 +1,15 @@
+.delete-icon {
+  color: grey;
+}
+
+.delete-icon:hover {
+  color: red;
+}
+
+.check-icon {
+  color: grey;
+}
+
+.check-icon:hover {
+  color: green;
+}

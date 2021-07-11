@@ -1,0 +1,34 @@
+{% extends 'accounts/base.html' %}
+{% block addprojectform %}
+    <div class="container">
+        <h1 class="display-4">Add Project</h1>
+        <form class="mt-5" method="POST">
+            {% csrf_token %}
+            <table>{{ form }}</table>
+            <!-- <div class="form-group">
+                <label for="project_name">Name</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="organization_name">Organization Name</label>
+                {{ form.organization_name }}
+            </div>
+            <div class="form-group">
+                <label for="project_technology">Technology</label>
+                {{ form.technology }}
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                {{ form.description }}
+            </div>
+            <div class="form-group">
+                <label for="created_date">Time Created</label>
+                {{ form.created_date }}
+            </div>
+             -->
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+    
+    
+{% endblock%}

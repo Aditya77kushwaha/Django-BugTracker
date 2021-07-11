@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  background-color: rgb(253, 250, 250);
+}
+input {
+  width: 300px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+input :focus {
+  background-color: rgb(253, 250, 250);
+}
+.button {
+  width: 200px;
+  background-color: rgb(70, 67, 255);
+}
+.button :hover {
+  background-color: rgba(70, 67, 255, 0);
+}
+.message {
+  margin-top: 10px;
+  width: 400px;
+  background-color: rgb(253, 250, 250);
+  color: red;
+  font-weight: 500;
+  font-size: small;
+  text-align: center;
+}
